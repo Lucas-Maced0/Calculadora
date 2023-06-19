@@ -17,7 +17,7 @@ class Calculadora {
 
     adiciona_numero(numero) {
         if (this.numero_atual.length < tamanho_visor) {
-            this.numero_atual += numero.toString();
+            this.numero_atual += numero;
         }
     }
 
