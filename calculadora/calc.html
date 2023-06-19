@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +12,46 @@
     <script src="./JavaScript/scripts.js" defer></script>
 
 </head>
+
 <body>
     <div id="texto">
-    <h1>Calculadora com JavaScript</h1>
+        <h1>Calculadora com JavaScript</h1>
     </div>
-    
+
     <div id="calculadora">
 
-        <div class="painel"><p id="resultado" hidden></p></div>
-
-        <button id="limpar" onclick="limparCampo()">C</button>
-        <button id="clearAll">CE</button>
-        <button id="percentual">%</button>
         
-        <button class="soma" valor="soma">+</button>
-        <button class="numero" valor="7" onclick="adicionaNum(7)">7</button>
-        <button class="numero" valor="8" onclick="adicionaNum(8)">8</button>
-        <button class="numero" valor="9" onclick="adicionaNum(9)">9</button>
+        <div class="container">
+            
+            <div class="painel">
+                <div id="acumulado"></div>
+                <div id="numero_atual"></div>
+            </div>
+            <button id="limpar" class=" numero-duplo" delete>DEL</button>
+            <button id="clearAll">CE</button>
+            <button operadores>/</button>
 
-        <button class="sub" valor="sub">-</button>
-        <button class="numero" valor="4" onclick="adicionaNum(4)">4</button>
-        <button class="numero" valor="5" onclick="adicionaNum(5)">5</button>
-        <button class="numero" valor="6" onclick="adicionaNum(6)">6</button>
+            <button class="numero" numeros>7</button>
+            <button class="numero" numeros>8</button>
+            <button class="numero" numeros>9</button>
+            <button class="soma" operadores>+</button>
 
-        <button class="mult" valor="mult">*</button>
-        <button class="numero" valor="1" onclick="adicionaNum(1)">1</button>
-        <button class="numero" valor="2" onclick="adicionaNum(2)">2</button>
-        <button class="numero" valor="3" onclick="adicionaNum(3)">3</button>
+            <button class="numero" numeros>4</button>
+            <button class="numero" numeros>5</button>
+            <button class="numero" numeros>6</button>
+            <button operadores>-</button>
 
-        <button class="numero" valor="ponto">.</button>
-        <button class="numero" valor="0" onclick="adicionaNum(0)">0</button>
-        <button class="div" valor="div">/</button>
-        <button class="igual" valor="igual">=</button>
+            <button class="numero" numeros>1</button>
+            <button class="numero" numeros>2</button>
+            <button class="numero" numeros>3</button>
+            <button operadores>*</button>
 
+            <button class="numero numero-duplo" numeros>0</button>
+            <button class="numero">.</button>
+            <button class="igual" igual>=</button>
+
+        </div>
     </div>
 </body>
+
 </html>
